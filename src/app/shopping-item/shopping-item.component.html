@@ -1,0 +1,52 @@
+<!-- <<p>shopping-item works!</p>
+<form #frm = "ngForm" (ngSubmit) ="addItem(frm)" *ngIf="!toggleForm">
+    <h2 id="add-item"> Add Item </h2>
+    <div class="form-group">
+    <label for=""> Name: </label> 
+    <input type="text" class="form-control" name="itemName" value="" ngModel required>
+    </div>
+    <div class="form-group">
+    <label for =""> Quantity: </label> 
+    <input type="number" class="form-control" name="itemQuantity" value="" ngModel required>
+    </div>   
+    <button type="submit" name="button" class="btn btn-success" [disabled]= frm.invalid> Add Item </button>
+</form> 
+<form #editForm = "ngForm" (ngSubmit) ="editItem(editForm)" *ngIf="toggleForm">
+    <h2 id="edit-item"> Edit Item </h2>
+    <div class="form-group">
+    <label for=""> Name: </label> 
+    <input type="text" class="form-control" name="itemName" value="" [ngModel]="selectedItem.itemName">
+    </div>
+    <div class="form-group">
+    <label for =""> Quantity: </label> 
+    <input type="number" class="form-control" name="itemQuantity" value="" [ngModel]="selectedItem.itemQuantity">
+    </div>   
+    <button type="submit" name="button" class="btn btn-success"> save </button>
+</form> 
+<h2 id="shopping-list"> Shopping List</h2>
+
+    <div *ngFor="let item of shoppingItemList" class="">
+        <div id="checkbox">
+            <input type="checkbox" name="" [checked] ="item.itemBought" (click)="updateItemChecked(item)">
+
+        </div>
+        <div id="item-name">
+            {{item.itemName}}
+        </div> 
+        <div id="item-quantity">
+            {{item.itemQuantity}}
+        </div>   
+        <div id="edit-btn">
+            <button type="button" name="button" class="btn btn-primary"(click)="showEditForm(item)"   [disabled]="toggleForm"> Edit </button>
+        </div>
+        <div id="delete-btn">
+            <button type="button" name="button" class="btn btn-danger"  (click)="deleteItem(item._id)"> Delete </button>
+        </div>
+        <br>
+        <br>
+    </div>
+ -->
+<div *ngIf="value"><p> Ammu Ramakrishna</p></div>
+<div *ngFor="let a of arr"><p> {{a}}</p></div>
+<input [(ngModel)]="name">
+<p>{{name}}</p>

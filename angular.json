@@ -24,7 +24,10 @@
               "src/assets"
             ],
             "styles": [
-              "src/styles.css"
+              "src/styles.css",
+              "C:/Users/saikumari/Documents/shoppinglist/clientcode/shopping-list/node_modules/bootstrap/dist/css/bootstrap.min.css"
+
+              
             ],
             "scripts": []
           },
@@ -88,9 +91,13 @@
               "src/assets"
             ],
             "styles": [
-              "src/styles.css"
+              "src/styles.css",
+              "C:/Users/saikumari/Documents/shoppinglist/clientcode/shopping-list/node_modules/bootstrap/dist/css/bootstrap.min.css"
             ],
-            "scripts": []
+            "scripts": [
+              "C:/Users/saikumari/Documents/shoppinglist/clientcode/shopping-list/node_modules/jquery/dist/jquery.min.js",
+              "C:/Users/saikumari/Documents/shoppinglist/clientcode/shopping-list/node_modules/bootstrap/dist/js/bootstrap.min.js"
+            ]
           }
         },
         "lint": {
@@ -119,6 +126,10 @@
           }
         }
       }
-    }},
-  "defaultProject": "shopping-list"
+    }
+  },
+  "defaultProject": "shopping-list",
+  "cli": {
+    "analytics": false
+  }
 }
